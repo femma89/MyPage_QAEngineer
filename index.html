@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <div class="banner"></div> -->
+        <!-- Capa de presentación -->
+    <div class="presentacion">
+        <div class="fila">
+            <div class="imagenP">
+                <img src="Sources/avatarCyberpunk.png" alt="avatar">
+            </div>
+            <div class="textoP">
+                <h1>Bienvenido a mi página</h1>
+                <p>¡Hola! Soy [Tu Nombre].</p>
+                <!-- Otros elementos de presentación -->
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="sidebar">
+            <img src="Sources/femmaLogo.png" alt="logo">
+            <!-- <h1 class="titulo-pagina">QA Engineer</h1> -->
+            <button class="boton-cyberpunk" onclick="toggleContent('proyectos')">Proyectos</button>
+            <div id="proyectos" class="contenido-oculto">
+                <p onclick="showProjectDetails('proyecto1-info')">Proyecto 1</p>
+                <p onclick="showProjectDetails('proyecto2-info')">Proyecto 2</p>
+                <p onclick="showProjectDetails('proyecto3-info')">Proyecto 3</p>
+                <p onclick="showProjectDetails('proyecto4-info')">Proyecto 4</p>
+            </div>
+            <button class="boton-cyberpunk" onclick="toggleContent('habilidades')">Experiencia</button>
+            <div id="habilidades" class="contenido-oculto">
+                <p onclick="showProjectDetails('habilidad1-info')">Recorrido</p>
+                <p onclick="showProjectDetails('habilidad2-info')">Habilidades</p>
+            </div>
+            <button class="boton-cyberpunk" onclick="toggleContent('personales')">Sobre mi</button>
+            <div id="personales" class="contenido-oculto">
+                <p onclick="hideAllContent(); showPresentation();">Perfil</p>
+                <p onclick="showProjectDetails('personal2-info')">Validaciones</p>
+            </div>
+            <button class="boton-cyberpunk" onclick="toggleContent('contactos')">Contacto</button>
+            <div id="contactos" class="contenido-oculto">
+                <p onclick="showProjectDetails('contacto1-info')">Contacto 1</p>
+            </div>
+                <div class="footer">
+                    <p>Versión 0.9</p>
+                    <p>Diseño inspirado en el videojuego <span class="destacado">Cyberpunk 2077</span></p>
+                </div>
+        </div>
+        <div class="contenido-container">
+            <!-- Agrega una clase por defecto al contenedor de contenido -->
+            <!-- Contenido de proyectos -->
+            <div class="proyecto-info" id="proyecto1-info">
+                <div class="proyecto1-info">
+                    <img src="Sources/caba1.jpg" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción del Proyecto 1...</p>
+                    <ul>
+                        <li>Detalle 1</li>
+                        <li>Detalle 2</li>
+                        <!-- Otros detalles relevantes -->
+                    </ul>
+                </div>
+                <!-- Contenido adicional del Proyecto 1 -->
+            </div>
+            <div class="proyecto-info" id="proyecto2-info">
+                <p>Detalles del Proyecto 2</p>
+                <!-- Contenido adicional del Proyecto 2 -->
+            </div>
+            <div class="proyecto-info" id="proyecto3-info">
+                <p>Detalles del Proyecto 3</p>
+                <!-- Contenido adicional del Proyecto 2 -->
+            </div>
+            <div class="proyecto-info" id="proyecto4-info">
+                <p>Detalles del Proyecto 4</p>
+                <!-- Contenido adicional del Proyecto 2 -->
+            </div>
+    
+                <!-- Contenido de habilidades -->
+            <div class="proyecto-info" id="habilidad1-info">
+                <div class="habilidad1-info">
+                    <img src="Sources/3257620.jpg" alt="Habilidad 1">
+                    <h3>Habilidad 1</h3>
+                    <p>Descripción de la Habilidad 1...</p>
+                    <ul>
+                        <li>Detalle 1</li>
+                        <li>Detalle 2</li>
+                        <!-- Otros detalles relevantes -->
+                    </ul>
+                </div>
+                <!-- Contenido adicional de la Habilidad 1 -->
+            </div>
+            <div class="proyecto-info" id="habilidad2-info">
+                <div class="tabla">
+                    <div class="fila">
+                        <div class="celda" data-tooltip="Mensaje del tooltip">
+                            <img src="Sources/Python.png" alt="Python">
+                            <p>Python</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <!-- Repite esta estructura para cada celda -->
+                    </div>
+                    <div class="fila">
+                        <div class="celda" data-tooltip="Mensaje del tooltip">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <!-- Repite esta estructura para cada celda -->
+                    </div>
+                    <div class="fila">
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <!-- Repite esta estructura para cada celda -->
+                    </div>
+                    <div class="fila">
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <!-- Repite esta estructura para cada celda -->
+                    </div>
+                    <div class="fila">
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <div class="celda">
+                            <img src="imagen1.jpg" alt="Imagen 1">
+                            <p>Nombre 1</p>
+                        </div>
+                        <!-- Repite esta estructura para cada celda -->
+                    </div>
+                    <!-- Repite la estructura de fila para tener las 5 filas -->
+                </div>
+            </div>
+
+                 <!-- Contenido personal -->
+            <div class="proyecto-info" id="personal2-info">
+                <p>Detalles de la personalidad 2</p>
+                <!-- Contenido adicional de la Habilidad 3 -->
+            </div>
+
+            <!-- Agrega una clase adicional a las secciones para la animación -->
+            <div class="proyecto-info animated-section" id="proyecto1-info">
+                <!-- Contenido de la sección -->
+            </div>
+            <div class="proyecto-info animated-section" id="proyecto2-info">
+                <!-- Contenido de la sección -->
+            </div>
+            <!-- Otras secciones -->
+
+        </div>
+    </div>
+
+
+    <!-- Agrega más bloques .proyecto-info para otros proyectos -->
+
+    <!-- Contenido de tu página va aquí -->
+
+    <script src="scripts.js"></script>
+    <script>
+        // JS para mostrar la presentación al cargar la página
+        window.onload = function() {
+            var presentacion = document.querySelector('.presentacion');
+            presentacion.style.display = 'block';
+        };
+
+        // Función para ocultar la presentación al hacer clic en un elemento del menú
+        function hidePresentation() {
+            var presentacion = document.querySelector('.presentacion');
+            presentacion.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

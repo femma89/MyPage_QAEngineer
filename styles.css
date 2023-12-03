@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Orbitron&display=swap');
+
+body {
+    display: flex;
+    justify-content: left;
+    align-items:top;
+    min-height: 100vh;
+    background-color: #000000;
+    /* background-image: url('https://www.designdo.fr/wp-content/uploads/2021/12/tumblr_ogo3xzbmmW1r6xm5co1_1280_medium.gif'); /* Cambia 'ruta/del/archivo/fondo.mp4' por la ruta correcta de tu archivo multimedia */
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom right,
+        rgba(2, 0, 0, 0.575) 0%,
+        rgba(82, 0, 0, 0.767) 100%
+    ); /* Modifica los valores rgba y los porcentajes para ajustar el gradiente */
+    z-index: -1; /* Coloca el gradiente detrás del contenido */
+}
+
+.titulo-pagina {
+    font-size: 48px; /* Cambia el tamaño de la letra */
+    color: #FFFFFF; /* Cambia el color del texto (en este caso, un tono de naranja) */
+    font-family: 'Bebas Neue', sans-serif; /* Cambia la fuente del texto */
+    /* Otros estilos que desees agregar */
+}
+
+/* Agrega la transición para la altura */
+.contenido-oculto {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Transición suave de 0.3 segundos */
+}
+
+/* Establece la altura deseada cuando están visibles */
+.contenido-visible {
+    max-height: 1000px; /* O la altura que desees */
+}
+
+#proyectos p  {
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding-left: 10px; /* Espacio desde el borde izquierdo para el texto */
+    color: #FFFFFF; /* Cambia el color del texto */
+    font-family: 'Montserrat', sans-serif; /* Cambia la fuente del texto */
+    font-size: 20px; /* Cambia el tamaño del texto */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Agrega transiciones */
+    border: 1px solid transparent; /* Borde transparente por defecto */
+    cursor: pointer;
+    width: 340px;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#habilidades p {
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding-left: 10px; /* Espacio desde el borde izquierdo para el texto */
+    color: #FFFFFF; /* Cambia el color del texto */
+    font-family: 'Montserrat', sans-serif; /* Cambia la fuente del texto */
+    font-size: 20px; /* Cambia el tamaño del texto */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Agrega transiciones */
+    border: 1px solid transparent; /* Borde transparente por defecto */
+    cursor: pointer;
+    width: 340px;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#personales p {
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding-left: 10px; /* Espacio desde el borde izquierdo para el texto */
+    color: #FFFFFF; /* Cambia el color del texto */
+    font-family: 'Montserrat', sans-serif; /* Cambia la fuente del texto */
+    font-size: 20px; /* Cambia el tamaño del texto */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Agrega transiciones */
+    border: 1px solid transparent; /* Borde transparente por defecto */
+    cursor: pointer;
+    width: 340px;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#contactos p {
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding-left: 10px; /* Espacio desde el borde izquierdo para el texto */
+    color: #FFFFFF; /* Cambia el color del texto */
+    font-family: 'Montserrat', sans-serif; /* Cambia la fuente del texto */
+    font-size: 20px; /* Cambia el tamaño del texto */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Agrega transiciones */
+    border: 1px solid transparent; /* Borde transparente por defecto */
+    cursor: pointer;
+    width: 340px;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#proyectos p:hover {
+    background: transparent;
+    transform: scale(1.05); /* Escala ligeramente el elemento en hover */
+    text-shadow: 0 5px 15px rgba(18, 146, 163, 0.5); /* Agrega sombra en hover */
+    border: 1px solid #00e6f6; 
+    color: #00e6f6;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#habilidades p:hover {
+    background: transparent;
+    transform: scale(1.05); /* Escala ligeramente el elemento en hover */
+    text-shadow: 0 5px 15px rgba(18, 146, 163, 0.5); /* Agrega sombra en hover */
+    border: 1px solid #00e6f6; 
+    color: #00e6f6;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#personales p:hover {
+    background: transparent;
+    transform: scale(1.05); /* Escala ligeramente el elemento en hover */
+    text-shadow: 0 5px 15px rgba(18, 146, 163, 0.5); /* Agrega sombra en hover */
+    border: 1px solid #00e6f6; 
+    color: #00e6f6;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#contactos p:hover {
+    background: transparent;
+    transform: scale(1.05); /* Escala ligeramente el elemento en hover */
+    text-shadow: 0 5px 15px rgba(18, 146, 163, 0.5); /* Agrega sombra en hover */
+    border: 1px solid #00e6f6; 
+    color: #00e6f6;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+/* Estilos para el menú lateral */
+.sidebar {
+    width: 405px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        to bottom right,
+        rgba(102, 102, 102, 0.473) 0%,
+        rgba(32, 32, 32, 0.322) 100%
+    );
+    color: #00e6f6;
+    padding-top: 10px;
+    margin-left: 10px;
+    /* Otros estilos que desees agregar */
+}
+.sidebar::before,
+.sidebar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px; /* Ancho de la sombra */
+    filter: blur(5px); /* Valor de desenfoque */
+}
+
+.sidebar::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.sidebar::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.sidebar img {
+    width: 150px;
+    height: auto;
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer {
+    position: relative;
+    bottom: -50px; /* Puedes ajustar la distancia del fondo */
+    left: -10px;
+    width: 100%;
+    text-align: right;
+    color: rgb(255, 41, 41); /* Color del texto */
+}
+
+.footer p {
+    margin: 5px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; /* Tamaño del texto */
+    /* Otros estilos que desees agregar */
+}
+
+
+/* Nueva clase para la animación */
+.animated-presentation {
+    animation: fade 1.5s ease-in-out; /* Aplica la animación de fade */
+}
+
+/* Estilos para la presentación */
+.presentacion {
+    margin-left: 530px; /* Ancho del sidebar */
+    position: fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: #00e6f6;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    z-index: 999;
+    margin-top: 76px;
+    padding: 20px; /* Añade algo de espacio interno */
+}
+
+.presentacion img {
+    width: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 70% 100%, 0 100%);
+    border: 1px solid #00e6f6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega sombra */
+
+}
+
+.textoP {
+    padding: 20px;
+}
+
+
+/* Estilos para las secciones con animación */
+.animated-section {
+    display: none; /* Oculta las secciones inicialmente */
+}
+
+/* Estilo para la animación de cambio */
+@keyframes fade {
+    0% { opacity: 0; }
+    25% { opacity: 1; transform: scale(1.05); }
+    50% { opacity: 0.8; }
+    75% { opacity: 1; transform: scale(1.03); }
+    100% { opacity: 1; }
+}
+
+
+/* Estilos para el contenido principal */
+.contenido-container {
+    display: flex;
+    margin-top: 82px;
+    margin-left: 410px;
+    font-family: 'Montserrat', sans-serif;
+    color: #00e6f6;
+    position: absolute;
+    background-color: transparent; /* Fondo semi-transparente */
+    padding: 20px;
+    /* border: 2px solid; */
+    border-radius: 5px;
+    z-index: 1;
+    /* Otros estilos */
+
+}
+
+.proyecto-info {
+    display: none;
+    /* Otros estilos */
+}
+
+/* Estilos para el contenido principal */
+.contenido-container img {
+    max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
+    border: 0px solid #00e6f6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega sombra */
+}
+
+.sidebar h1 {
+    text-align: center;
+}
+/* Estilos para los botones del menú */
+.sidebar button {
+    display: block;
+    margin-bottom: 10px; /* Espacio entre los botones */
+    /* Otros estilos que desees agregar */
+}
+
+.tabla {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #ffffff; Borde para la tabla */
+    gap: 3px; /* Espacio entre filas */
+    padding: 10px; /* Espaciado interno para la tabla */
+    margin-left: 110px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around; /* Espaciado uniforme entre celdas */
+}
+
+.celda {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea el contenido hacia la parte inferior */
+    border: 2px solid rgb(102, 0, 0); /* Borde para cada celda */
+    border-left: 10px solid;
+    padding: 10px; /* Espaciado interno para las celdas */
+    text-align: center; /* Centra el contenido */
+    position: relative; /* Permite posicionar el tooltip */
+    margin-right: 3px; /* Agrega un margen derecho entre las celdas */
+}
+
+
+.celda img {
+    width: 100px; /* Tamaño de la imagen */
+    height: 100px; /* Tamaño de la imagen */
+}
+
+.celda p {
+    margin-bottom: -5px;
+    color: #FFFFFF;
+}
+
+.celda:hover {
+    background-color: #6d000077; /* Color de fondo al pasar el ratón sobre la celda */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la celda */
+}
+
+/* Estilo del tooltip */
+.celda::before {
+    content: attr(data-tooltip); /* Muestra el contenido del atributo data-tooltip */
+    position: absolute;
+    bottom: calc(100% + 5px); /* Posiciona el tooltip arriba de la celda */
+    left: 50%; /* Posiciona el tooltip en el centro horizontal */
+    transform: translateX(-50%);
+    backdrop-filter: blur(5px); /* Aplica un desenfoque al fondo */
+    background-color: #04012591;
+    color: #00e6f6;
+    padding: 5px 10px;
+    border-radius: 0px;
+    border: 1px solid rgb(102, 0, 0);
+    opacity: 0; /* El tooltip comienza oculto */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Evita que el tooltip sea clickeable */
+}
+
+/* Mostrar el tooltip al pasar el ratón */
+.celda:hover::before {
+    opacity: 1; /* Muestra el tooltip al pasar el ratón sobre la celda */
+}
+
+button,
+button::after {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #00e6f6 5%);
+    border: 0;
+    color: #000;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #ff013c;
+    outline: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button::after {
+    --slice-0: inset(50% 50% 50% 50%); 
+    --slice-1: inset(80% -6px 0 0); 
+    --slice-2: inset(50% -6px 30% 0); 
+    --slice-3: inset(10% -6px 85% 0); 
+    --slice-4: inset(50% -6px 43% 0); 
+    --slice-5: inset(50% -6px 5% 0); 
+
+    content: 'PORTFOLIO';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #ff013c 5%, #00e6f6 5%);
+    text-shadow: -3px -3px 0px #f8f005, 3px 3px 9px #0036f6;
+    clip-path: var(--slice-0);
+
+}
+
+button:hover::after{
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, -0px);
+    }
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+}
