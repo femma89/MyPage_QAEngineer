@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Nova+Square&family=Orbitron&display=swap');
 
 body {
     display: flex;
@@ -28,11 +28,32 @@ body::before {
 }
 
 .titulo-pagina {
-    font-size: 48px; /* Cambia el tamaño de la letra */
+    font-size: 30px; /* Cambia el tamaño de la letra */
     color: #FFFFFF; /* Cambia el color del texto (en este caso, un tono de naranja) */
-    font-family: 'Bebas Neue', sans-serif; /* Cambia la fuente del texto */
+    font-family: 'orbitron', sans-serif; /* Cambia la fuente del texto */
+    padding: 0 0 0 20px;
     /* Otros estilos que desees agregar */
 }
+
+/* Estilos del contenedor del título y el botón de LinkedIn */
+.titulo-y-linkedin {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilos para la imagen de LinkedIn */
+.imagen-linkedin img {
+    width: 30px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Para mantener la proporción */
+    margin-left: 140px;
+  }
+
+  /* Estilos de la imagen de LinkedIn en estado hover */
+.imagen-linkedin:hover img {
+    content: url('Sources/LinkedinLogo1.png'); /* Cambia la imagen al pasar el mouse */
+    width: 30px; /* Ajusta el tamaño de la imagen */
+    margin-left: 140px;
+  }
 
 /* Agrega la transición para la altura */
 .contenido-oculto {
@@ -187,15 +208,6 @@ body::before {
     background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
 }
 
-.sidebar img {
-    width: 150px;
-    height: auto;
-    display: block; /* Hace que la imagen se comporte como un bloque */
-    margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
 .footer {
     position: relative;
     bottom: -50px; /* Puedes ajustar la distancia del fondo */
@@ -253,6 +265,77 @@ body::before {
     display: none; /* Oculta las secciones inicialmente */
 }
 
+.timeline {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .timeline li {
+    position: relative;
+    margin-left: 30px; /* Espacio a la izquierda */
+    padding-bottom: 20px; /* Espacio entre elementos */
+  }
+  
+  .timeline li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7px; /* Alineación izquierda */
+    width: 15px; /* Grosor de la línea vertical */
+    height: 15px; /* Tamaño del punto */
+    background-color: #888; /* Color del punto */
+    border-radius: 50%;
+    margin-left: -32px;
+  }
+
+  .timeline li:hover::after {
+    background-color: #00e6f6; /* Cambia el color al pasar el mouse */
+  }
+  
+  .timeline li::before {
+    content: '';
+    position: absolute;
+    left: -2px; /* Alineación izquierda */
+    width: 1px; /* Grosor de la línea vertical */
+    background-color: #888; /* Color de la línea */
+    top: 10px; /* Lugar desde donde inicia la línea vertical */
+    bottom: 0;
+    margin-left: -30px;
+  }
+  
+  .timeline time {
+    font-size: 14px;
+    font-weight: bold;
+    color: #888;
+  }
+  
+  .timeline h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 8px;
+  }
+  
+  .timeline p {
+    font-size: 16px;
+    color: #00e6f6;
+    margin-top: 4px;
+  }
+  
+  /* Ejemplo de estilos para el enlace "Learn more" */
+  .timeline a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
 /* Estilo para la animación de cambio */
 @keyframes fade {
     0% { opacity: 0; }

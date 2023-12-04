@@ -22,8 +22,14 @@
     </div>
     <div class="main-container">
         <div class="sidebar">
-            <img src="Sources/femmaLogo.png" alt="logo">
-            <!-- <h1 class="titulo-pagina">QA Engineer</h1> -->
+            <!-- <img src="Sources/femmaLogo.png" alt="logo"> -->
+            <div class="titulo-y-linkedin">
+                <h1 class="titulo-pagina">My Portfolio</h1>
+                <a href="https://www.linkedin.com/in/emmanuel-eduardo-flores-b13524226/" target="_blank" class="imagen-linkedin">
+                    <img src="Sources/LinkedinXian.png" alt="LinkedIn">
+                </a>
+            </div>
+            
             <button class="boton-cyberpunk" onclick="toggleContent('proyectos')">Proyectos</button>
             <div id="proyectos" class="contenido-oculto">
                 <p onclick="showProjectDetails('proyecto1-info')">Proyecto 1</p>
@@ -33,7 +39,7 @@
             </div>
             <button class="boton-cyberpunk" onclick="toggleContent('habilidades')">Experiencia</button>
             <div id="habilidades" class="contenido-oculto">
-                <p onclick="showProjectDetails('habilidad1-info')">Recorrido</p>
+                <p onclick="showProjectDetails('habilidad1-info')">Trayectoria</p>
                 <p onclick="showProjectDetails('habilidad2-info')">Habilidades</p>
             </div>
             <button class="boton-cyberpunk" onclick="toggleContent('personales')">Sobre mi</button>
@@ -82,14 +88,31 @@
                 <!-- Contenido de habilidades -->
             <div class="proyecto-info" id="habilidad1-info">
                 <div class="habilidad1-info">
-                    <img src="Sources/3257620.jpg" alt="Habilidad 1">
-                    <h3>Habilidad 1</h3>
-                    <p>Descripción de la Habilidad 1...</p>
-                    <ul>
-                        <li>Detalle 1</li>
-                        <li>Detalle 2</li>
-                        <!-- Otros detalles relevantes -->
-                    </ul>
+                    <div class="timeline">
+                        <ol class="timelineList">                  
+                            <li class="elemento">
+                                <time class="fecha">February 2022</time>
+                                <h3 class="subtitulo">Application UI code in Tailwind CSS</h3>
+                                <p class="descripcion">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                            </li>
+                            <li class="elemento">
+                                <time class="fecha">March 2022</time>
+                                <h3 class="subtitulo">Marketing UI design in Figma</h3>
+                                <p class="descripcion">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+                            </li>
+                            <li class="elemento">
+                                <time class="fecha">April 2022</time>
+                                <h3 class="subtitulo">E-Commerce UI code in Tailwind CSS</h3>
+                                <p class="descripcion">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                            </li>
+                            <li class="elemento">
+                                <time class="fecha">April 2022</time>
+                                <h3 class="subtitulo">E-Commerce UI code in Tailwind CSS</h3>
+                                <p class="descripcion">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                            </li>
+                        </ol>
+                </div>
+                    
                 </div>
                 <!-- Contenido adicional de la Habilidad 1 -->
             </div>
