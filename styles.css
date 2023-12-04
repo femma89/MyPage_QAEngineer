@@ -299,8 +299,6 @@ body::before {
 .textoP {
     padding: 20px;
 }
-
-
 /* Estilos para las secciones con animación */
 .animated-section {
     display: none; /* Oculta las secciones inicialmente */
@@ -452,7 +450,6 @@ body::before {
     margin-right: 3px; /* Agrega un margen derecho entre las celdas */
 }
 
-
 .celda img {
     width: 100px; /* Tamaño de la imagen */
     height: 100px; /* Tamaño de la imagen */
@@ -513,6 +510,7 @@ body::before {
 /* Estilos de los campos de entrada */
 .proyecto-info form input[type="email"],
 .proyecto-info form textarea {
+    resize: vertical; /* Esto permite la redimensión solo vertical */
     width: 98%;
     padding: 8px;
     margin-bottom: 16px;

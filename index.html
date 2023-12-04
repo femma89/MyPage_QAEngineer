@@ -48,7 +48,7 @@
             <button class="boton-cyberpunk" onclick="toggleContent('personales')">Sobre mi</button>
             <div id="personales" class="contenido-oculto">
                 <p onclick="hideAllContent(); showPresentation();">Perfil</p>
-                <p onclick="showProjectDetails('personal2-info')">Validaciones</p>
+                <p onclick="showProjectDetails('personal2-info')">Referencias</p>
             </div>
             <button class="boton-cyberpunk" onclick="toggleContent('contactos')">Contacto</button>
             <div id="contactos" class="contenido-oculto">
@@ -260,14 +260,6 @@
                     <input type="submit" value="Send" class="boton-formulario-send">
                 </form>
             </div>
-
-            <div class="proyecto-info" id="contacto2-info">
-                <p>Detalles de la personalidad 2</p>
-                <a href="Sources/CV_Emmanuel_Flores_2023_QA.pdf" download class="boton-cv">
-                    <img src="Sources/DownloadCV5.png" alt="Descargar CV">
-                </a>
-            </div>
-
             <!-- Agrega una clase adicional a las secciones para la animación -->
             <div class="proyecto-info animated-section" id="proyecto1-info">
                 <!-- Contenido de la sección -->
@@ -276,28 +268,13 @@
                 <!-- Contenido de la sección -->
             </div>
             <!-- Otras secciones -->
-
         </div>
     </div>
-
 
     <!-- Agrega más bloques .proyecto-info para otros proyectos -->
 
     <!-- Contenido de tu página va aquí -->
 
     <script src="scripts.js"></script>
-    <script>
-        // JS para mostrar la presentación al cargar la página
-        window.onload = function() {
-            var presentacion = document.querySelector('.presentacion');
-            presentacion.style.display = 'block';
-        };
-
-        // Función para ocultar la presentación al hacer clic en un elemento del menú
-        function hidePresentation() {
-            var presentacion = document.querySelector('.presentacion');
-            presentacion.style.display = 'none';
-        }
-    </script>
 </body>
 </html>
