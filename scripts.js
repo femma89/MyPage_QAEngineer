@@ -74,7 +74,7 @@ function showPresentation() {
     // Muestra la presentación después de una pequeña demora (opcional)
     setTimeout(function() {
         presentacion.style.display = 'block';
-    }, 100); // Modifica esta cantidad para ajustar la demora, si es necesario
+    }, 100); // Modificar esta cantidad para ajustar la demora, si es necesario
 }
 
 window.onload = function() {
@@ -84,5 +84,5 @@ window.onload = function() {
     // Aplica la clase de animación a la presentación después de una pequeña demora
     setTimeout(function() {
         presentacion.classList.add('animated-presentation');
-    }, 100); // Modifica esta cantidad para ajustar la demora, si es necesario
+    }, 100); // Modificar esta cantidad para ajustar la demora, si es necesario
 };

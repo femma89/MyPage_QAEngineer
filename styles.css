@@ -6,7 +6,7 @@ body {
     align-items:top;
     min-height: 100vh;
     background-color: #000000;
-    /* background-image: url('https://www.designdo.fr/wp-content/uploads/2021/12/tumblr_ogo3xzbmmW1r6xm5co1_1280_medium.gif'); /* Cambia 'ruta/del/archivo/fondo.mp4' por la ruta correcta de tu archivo multimedia */
+    /* background-image: url('https://www.designdo.fr/wp-content/uploads/2021/12/tumblr_ogo3xzbmmW1r6xm5co1_1280_medium.gif'); */
     background-size: cover;
     background-attachment: fixed;
 
@@ -23,17 +23,16 @@ body::before {
         to bottom right,
         rgba(2, 0, 0, 0.575) 0%,
         rgba(82, 0, 0, 0.767) 100%
-    ); /* Modifica los valores rgba y los porcentajes para ajustar el gradiente */
+    ); /* Modificar los valores rgba y los porcentajes para ajustar el gradiente */
     z-index: -1; /* Coloca el gradiente detrás del contenido */
 }
 
 .titulo-pagina {
     font-size: 30px; /* Cambia el tamaño de la letra */
-    color: #FFFFFF; /* Cambia el color del texto (en este caso, un tono de naranja) */
+    color: #FFFFFF; /* Cambia el color del texto */
     font-family: 'orbitron', sans-serif; /* Cambia la fuente del texto */
     padding: 0 0 0 20px;
     margin-right: 110px;
-    /* Otros estilos que desees agregar */
 }
 
 /* Estilos del contenedor del título y el botón de LinkedIn */
@@ -49,7 +48,7 @@ body::before {
     margin-left: 0px;
   }
 
-/* Estilos para la imagen de LinkedIn */
+/* Estilos para la imagen de GitHub */
 .imagen-github img {
     width: 25px; /* Ajusta el tamaño de la imagen */
     height: auto; /* Para mantener la proporción */
@@ -63,6 +62,7 @@ body::before {
     margin-left: 0px;
   }
 
+/* Estilos de la imagen de GitHub en estado hover */
 .imagen-github:hover img {
     content: url('Sources/GitHubLogoWhite.png'); /* Cambia la imagen al pasar el mouse */
     width: 25px; /* Ajusta el tamaño de la imagen */
@@ -78,7 +78,7 @@ body::before {
 
 /* Establece la altura deseada cuando están visibles */
 .contenido-visible {
-    max-height: 1000px; /* O la altura que desees */
+    max-height: 1000px;
 }
 
 #proyectos p  {
@@ -227,7 +227,6 @@ body::before {
     color: #00e6f6;
     padding-top: 10px;
     margin-left: 10px;
-    /* Otros estilos que desees agregar */
 }
 .sidebar::before,
 .sidebar::after {
@@ -251,7 +250,7 @@ body::before {
 
 .footer {
     position: relative;
-    bottom: -50px; /* Puedes ajustar la distancia del fondo */
+    bottom: -50px; /* Ajustar la distancia del fondo */
     left: -10px;
     width: 100%;
     text-align: right;
@@ -262,7 +261,6 @@ body::before {
     margin: 5px 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px; /* Tamaño del texto */
-    /* Otros estilos que desees agregar */
 }
 
 
@@ -299,6 +297,7 @@ body::before {
 .textoP {
     padding: 20px;
 }
+
 /* Estilos para las secciones con animación */
 .animated-section {
     display: none; /* Oculta las secciones inicialmente */
@@ -392,7 +391,7 @@ body::before {
     font-family: 'Montserrat', sans-serif;
     color: #00e6f6;
     position: absolute;
-    background-color: transparent; /* Fondo semi-transparente */
+    background-color: transparent;
     padding: 20px;
     /* border: 2px solid; */
     border-radius: 5px;
@@ -402,7 +401,6 @@ body::before {
 
 .proyecto-info {
     display: none;
-    /* Otros estilos */
 }
 
 /* Estilos para el contenido principal */
@@ -417,11 +415,11 @@ body::before {
 .sidebar h1 {
     text-align: center;
 }
+
 /* Estilos para los botones del menú */
 .sidebar button {
     display: block;
     margin-bottom: 10px; /* Espacio entre los botones */
-    /* Otros estilos que desees agregar */
 }
 
 .tabla {
@@ -498,6 +496,7 @@ body::before {
         rgba(32, 32, 32, 0.322) 100%
     );
     border-radius: 0px;
+    border: 1px solid rgb(102, 0, 0);
 }
 
 /* Estilos de las etiquetas */
