@@ -28,6 +28,9 @@
                 <a href="https://www.linkedin.com/in/emmanuel-eduardo-flores-b13524226/" target="_blank" class="imagen-linkedin">
                     <img src="Sources/LinkedinXian.png" alt="LinkedIn">
                 </a>
+                <a href="https://github.com/femma89" target="_blank" class="imagen-github">
+                    <img src="Sources/GitHubLogoXian.png" alt="Repo">
+                </a>
             </div>
             
             <button class="boton-cyberpunk" onclick="toggleContent('proyectos')">Proyectos</button>
@@ -49,7 +52,8 @@
             </div>
             <button class="boton-cyberpunk" onclick="toggleContent('contactos')">Contacto</button>
             <div id="contactos" class="contenido-oculto">
-                <p onclick="showProjectDetails('contacto1-info')">Contacto 1</p>
+                <p onclick="showProjectDetails('contacto1-info')">Enviar mensaje</p>
+                <a href="Sources/CV_Emmanuel_Flores_2023_QA.pdf" download="CV_Emmanuel_Flores">Descargar CV</a>
             </div>
                 <div class="footer">
                     <p>Versión 0.9</p>
@@ -241,6 +245,27 @@
             <div class="proyecto-info" id="personal2-info">
                 <p>Detalles de la personalidad 2</p>
                 <!-- Contenido adicional de la Habilidad 3 -->
+            </div>
+
+                <!-- Contenido contacto -->
+            <div class="proyecto-info" id="contacto1-info">
+                <form action="https://formspree.io/f/xoqoogvd" method="POST">
+                    <label for="email">Ingresa tu mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Ej: jackie@gmail.com" required>
+                    
+                    <label for="message">Tu mensaje:</label>
+                    <textarea name="message" id="message" placeholder="¿Que puedo hacer por ti?" required></textarea>
+                    
+                    <!-- your other form fields go here -->
+                    <input type="submit" value="Send" class="boton-formulario-send">
+                </form>
+            </div>
+
+            <div class="proyecto-info" id="contacto2-info">
+                <p>Detalles de la personalidad 2</p>
+                <a href="Sources/CV_Emmanuel_Flores_2023_QA.pdf" download class="boton-cv">
+                    <img src="Sources/DownloadCV5.png" alt="Descargar CV">
+                </a>
             </div>
 
             <!-- Agrega una clase adicional a las secciones para la animación -->

@@ -32,6 +32,7 @@ body::before {
     color: #FFFFFF; /* Cambia el color del texto (en este caso, un tono de naranja) */
     font-family: 'orbitron', sans-serif; /* Cambia la fuente del texto */
     padding: 0 0 0 20px;
+    margin-right: 110px;
     /* Otros estilos que desees agregar */
 }
 
@@ -45,14 +46,27 @@ body::before {
 .imagen-linkedin img {
     width: 30px; /* Ajusta el tamaño de la imagen */
     height: auto; /* Para mantener la proporción */
-    margin-left: 140px;
+    margin-left: 0px;
+  }
+
+/* Estilos para la imagen de LinkedIn */
+.imagen-github img {
+    width: 25px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Para mantener la proporción */
+    margin-left: 5px;
   }
 
   /* Estilos de la imagen de LinkedIn en estado hover */
 .imagen-linkedin:hover img {
     content: url('Sources/LinkedinLogo1.png'); /* Cambia la imagen al pasar el mouse */
     width: 30px; /* Ajusta el tamaño de la imagen */
-    margin-left: 140px;
+    margin-left: 0px;
+  }
+
+.imagen-github:hover img {
+    content: url('Sources/GitHubLogoWhite.png'); /* Cambia la imagen al pasar el mouse */
+    width: 25px; /* Ajusta el tamaño de la imagen */
+    margin-left: 5px;
   }
 
 /* Agrega la transición para la altura */
@@ -131,6 +145,22 @@ body::before {
     margin-right: 10px;
 }
 
+#contactos a {
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding-left: 10px; /* Espacio desde el borde izquierdo para el texto */
+    color: #FFFFFF; /* Cambia el color del texto */
+    font-family: 'Montserrat', sans-serif; /* Cambia la fuente del texto */
+    font-size: 20px; /* Cambia el tamaño del texto */
+    transition: background-color 0.3s ease;
+    border: 1px solid transparent; /* Borde transparente por defecto */
+    cursor: pointer;
+    width: 340px;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
 #proyectos p:hover {
     background: transparent;
     transform: scale(1.05); /* Escala ligeramente el elemento en hover */
@@ -166,6 +196,17 @@ body::before {
     transform: scale(1.05); /* Escala ligeramente el elemento en hover */
     text-shadow: 0 5px 15px rgba(18, 146, 163, 0.5); /* Agrega sombra en hover */
     border: 1px solid #00e6f6; 
+    color: #00e6f6;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#contactos a:hover {
+    background-color: #6d000077; 
+    border: 1px solid rgb(102, 0, 0);
+    transition: background-color 0.3s ease;
+    transform: scale(1.00); /* Escala ligeramente el elemento en hover */
+    text-shadow: 0 5px 15px rgba(18, 146, 163, 0.5); /* Agrega sombra en hover */
     color: #00e6f6;
     margin-left: 25px;
     margin-right: 10px;
@@ -345,7 +386,6 @@ body::before {
     100% { opacity: 1; }
 }
 
-
 /* Estilos para el contenido principal */
 .contenido-container {
     display: flex;
@@ -360,7 +400,6 @@ body::before {
     border-radius: 5px;
     z-index: 1;
     /* Otros estilos */
-
 }
 
 .proyecto-info {
@@ -450,6 +489,54 @@ body::before {
 /* Mostrar el tooltip al pasar el ratón */
 .celda:hover::before {
     opacity: 1; /* Muestra el tooltip al pasar el ratón sobre la celda */
+}
+/* Estilos generales del formulario */
+.proyecto-info form {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(
+        to bottom right,
+        rgba(102, 102, 102, 0.473) 0%,
+        rgba(32, 32, 32, 0.322) 100%
+    );
+    border-radius: 0px;
+}
+
+/* Estilos de las etiquetas */
+.proyecto-info form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilos de los campos de entrada */
+.proyecto-info form input[type="email"],
+.proyecto-info form textarea {
+    width: 98%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #00e6f6;
+    background-color: #ccc;
+}
+
+.boton-formulario-send {
+    /* Estilos particulares para este botón */
+    background-color: transparent;
+    color: #00e6f6;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* Esto alineará el botón a la derecha */
+    display: block; /* Para asegurar que ocupe todo el ancho disponible */
+}
+
+.boton-formulario-send:hover {
+    background-color: #6d000077; 
+    border: 2px solid rgb(102, 0, 0);
 }
 
 button,
