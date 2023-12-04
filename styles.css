@@ -442,7 +442,7 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* Alinea el contenido hacia la parte inferior */
-    border: 2px solid rgb(102, 0, 0); /* Borde para cada celda */
+    border: 1px solid rgb(102, 0, 0); /* Borde para cada celda */
     border-left: 10px solid;
     padding: 10px; /* Espaciado interno para las celdas */
     text-align: center; /* Centra el contenido */
@@ -536,6 +536,44 @@ body::before {
     background-color: #6d000077; 
     border: 2px solid rgb(102, 0, 0);
 }
+
+/* Estilos para cada tarjeta de opinión */
+.tarjeta-opinion {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid rgb(102, 0, 0);
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.tarjeta-opinion:hover {
+    border: 1px solid #00e6f6;
+    background-color: #6d000077;
+}
+
+.tarjeta-opinion img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info-persona {
+    padding: 20px;
+}
+
+.info-persona p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para el título de la sección */
+#opiniones p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 
 button,
 button::after {
