@@ -86,3 +86,5 @@ window.onload = function() {
         presentacion.classList.add('animated-presentation');
     }, 100); // Modificar esta cantidad para ajustar la demora, si es necesario
 };
+
+

@@ -282,7 +282,7 @@ body::before {
     display: flex;
     align-items: center; /* Alinea verticalmente */
     z-index: 999;
-    margin-top: 76px;
+    margin-top: 66px;
     padding: 20px; /* Añade algo de espacio interno */
 }
 
@@ -308,6 +308,7 @@ body::before {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: -15px;
   }
   
   .timeline li {
@@ -386,7 +387,7 @@ body::before {
 /* Estilos para el contenido principal */
 .contenido-container {
     display: flex;
-    margin-top: 82px;
+    margin-top: 58px;
     margin-left: 410px;
     font-family: 'Montserrat', sans-serif;
     color: #00e6f6;
@@ -429,6 +430,7 @@ body::before {
     gap: 3px; /* Espacio entre filas */
     padding: 10px; /* Espaciado interno para la tabla */
     margin-left: 110px;
+    margin-top: -30px;
 }
 
 .fila {
@@ -463,28 +465,33 @@ body::before {
     cursor: pointer; /* Cambia el cursor al pasar sobre la celda */
 }
 
+
 /* Estilo del tooltip */
 .celda::before {
     content: attr(data-tooltip); /* Muestra el contenido del atributo data-tooltip */
     position: absolute;
-    bottom: calc(100% + 5px); /* Posiciona el tooltip arriba de la celda */
-    left: 50%; /* Posiciona el tooltip en el centro horizontal */
+    top: 50%; /* Posiciona el tooltip en el centro vertical */
+    left: calc(100% + 5px); /* Posiciona el tooltip a la derecha de la celda */
     transform: translateX(-50%);
     backdrop-filter: blur(5px); /* Aplica un desenfoque al fondo */
-    background-color: #04012591;
-    color: #00e6f6;
+    background-color: #040125be;
+    color: #fff;
+    text-align: left;
+    white-space: pre-wrap; /* Para interpretar los saltos de línea */
     padding: 5px 10px;
     border-radius: 0px;
     border: 1px solid rgb(102, 0, 0);
     opacity: 0; /* El tooltip comienza oculto */
     transition: opacity 0.3s ease;
-    pointer-events: none; /* Evita que el tooltip sea clickeable */
+    pointer-events: none; /* Evita que el tooltip sea clickable */
+    z-index: 1;
 }
 
 /* Mostrar el tooltip al pasar el ratón */
 .celda:hover::before {
     opacity: 1; /* Muestra el tooltip al pasar el ratón sobre la celda */
-}
+} 
+
 /* Estilos generales del formulario */
 .proyecto-info form {
     width: 800px;
