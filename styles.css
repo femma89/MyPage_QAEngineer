@@ -271,7 +271,7 @@ body::before {
 
 /* Estilos para la presentación */
 .presentacion {
-    margin-left: 530px; /* Ancho del sidebar */
+    margin-left: 430px; /* Ancho del sidebar */
     position: fixed;
     font-family: 'Montserrat', sans-serif;
     color: #00e6f6;
@@ -429,7 +429,7 @@ body::before {
     /* border: 2px solid #ffffff; Borde para la tabla */
     gap: 3px; /* Espacio entre filas */
     padding: 10px; /* Espaciado interno para la tabla */
-    margin-left: 110px;
+    margin-left: 50px;
     margin-top: -30px;
 }
 
@@ -439,6 +439,8 @@ body::before {
 }
 
 .celda {
+    /* width: 80px;
+    height: 110px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* Alinea el contenido hacia la parte inferior */
@@ -446,7 +448,7 @@ body::before {
     border-left: 10px solid;
     padding: 10px; /* Espaciado interno para las celdas */
     text-align: center; /* Centra el contenido */
-    position: relative; /* Permite posicionar el tooltip */
+    position: relative;
     margin-right: 3px; /* Agrega un margen derecho entre las celdas */
 }
 
@@ -474,10 +476,11 @@ body::before {
     left: calc(100% + 5px); /* Posiciona el tooltip a la derecha de la celda */
     transform: translateX(-50%);
     backdrop-filter: blur(5px); /* Aplica un desenfoque al fondo */
-    background-color: #040125be;
+    background-color: #060235e5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
     color: #fff;
     text-align: left;
-    white-space: pre-wrap; /* Para interpretar los saltos de línea */
     padding: 5px 10px;
     border-radius: 0px;
     border: 1px solid rgb(102, 0, 0);
@@ -485,6 +488,9 @@ body::before {
     transition: opacity 0.3s ease;
     pointer-events: none; /* Evita que el tooltip sea clickable */
     z-index: 1;
+    max-width: 300px; /* Establecer un ancho máximo para el tooltip */
+    white-space: normal; /* Permitir que las palabras se ajusten sin dividirse */
+    word-wrap: normal; /* Evitar la división de palabras */
 }
 
 /* Mostrar el tooltip al pasar el ratón */
@@ -494,7 +500,7 @@ body::before {
 
 /* Estilos generales del formulario */
 .proyecto-info form {
-    width: 800px;
+    width: 720px;
     margin: 0 auto;
     padding: 20px;
     background: linear-gradient(
