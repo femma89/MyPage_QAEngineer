@@ -263,12 +263,121 @@ body::before {
     font-size: 14px; /* Tamaño del texto */
 }
 
-
-/* Nueva clase para la animación */
-.animated-presentation {
-    animation: fade 1.5s ease-in-out; /* Aplica la animación de fade */
+/* Estilos para el banner */
+.banner {
+    display: flex;
+    position: fixed;
+    align-items: center; /* Centra verticalmente */
+    justify-content: left; /* Centra horizontalmente */
+    top: 0;
+    left: 415px; /* Ancho del sidebar más un margen adicional */
+    right: 0;
+    height: 50px; /* Altura del banner, ajusta según tu diseño */
+    background-color: #00000031; /* Color de fondo del banner */
+    backdrop-filter: blur(5px);
+    z-index: 998; /* Asegura que esté detrás del combo box */
+    /* Agrega más estilos según tus necesidades */
 }
 
+.titleSection {
+    display: none;
+    margin-right: 20px; /* Espacio a la derecha del título */
+    padding: 0 0 0 20px;
+    font-size: 24px;
+    color: #00e6f6; /* Cambia el color del texto */
+    /* Otros estilos que desees aplicar */
+}
+
+.way {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: -15px;
+  }
+  
+  .way li {
+    position: relative;
+    padding-bottom: 20px; /* Espacio entre elementos */
+  }
+  
+  .way li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7px; /* Alineación izquierda */
+    width: 15px; /* Grosor de la línea vertical */
+    height: 15px; /* Tamaño del punto */
+    background-color: #888; /* Color del punto */
+    border-radius: 0%;
+    margin-left: -32px;
+  }
+
+  .way li:hover::after {
+    background-color: #00e6f6; /* Cambia el color al pasar el mouse */
+  }
+  
+  .way li::before {
+    content: '';
+    position: absolute;
+    left: -2px; /* Alineación izquierda */
+    width: 1px; /* Grosor de la línea vertical */
+    border-left: 1px dashed #888; /* Línea punteada con el color especificado */
+    top: 10px; /* Lugar desde donde inicia la línea vertical */
+    bottom: 0;
+    margin-left: -30px;
+}
+
+  
+  .way time {
+    font-size: 14px;
+    font-weight: bold;
+    color: #888;
+  }
+  
+  .way h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 8px;
+  }
+  
+  .way p {
+    font-size: 16px;
+    color: #00e6f6;
+    margin-top: 4px;
+  }
+
+/* Estilos para el combo box */
+#select-way {
+    width: 120px;
+    height: 30px;
+    color:#fff;
+    top: 0;
+    background-color: #00000091; /* Ajusta el color de fondo según tu diseño */
+    border-radius: 0; /* Elimina los bordes redondeados */
+    border: 1px solid #00e6f6
+    /* Agrega más estilos según tus necesidades */
+}
+
+/* Estilo para mostrar el combo box una vez posicionado */
+#select-way.show {
+    display: block;
+}
+
+/* Estilo para las opciones del combo box */
+#select-way option {
+    background-color: #00000000; /* Color de fondo de las opciones */
+    border-radius: 0; /* Elimina los bordes redondeados */
+    color: #ffffff; /* Color del texto de las opciones */
+}
+
+/* Estilo para el hover sobre las opciones del combo box */
+#select-way option:hover {
+    background-color: #00e6f6; /* Color de fondo al pasar el mouse por encima */
+    color: #fff; /* Color del texto al pasar el mouse por encima */
+    /* Agrega más estilos según tus necesidades */
+}
 /* Estilos para la presentación */
 .presentacion {
     margin-left: 430px; /* Ancho del sidebar */
@@ -284,6 +393,11 @@ body::before {
     z-index: 999;
     margin-top: 66px;
     padding: 20px; /* Añade algo de espacio interno */
+}
+
+/* Nueva clase para la animación */
+.animated-presentation {
+    animation: fade 1.5s ease-in-out; /* Aplica la animación de fade */
 }
 
 .presentacion img {
@@ -313,7 +427,6 @@ body::before {
   
   .timeline li {
     position: relative;
-    margin-left: 30px; /* Espacio a la izquierda */
     padding-bottom: 20px; /* Espacio entre elementos */
   }
   
@@ -429,7 +542,6 @@ body::before {
     /* border: 2px solid #ffffff; Borde para la tabla */
     gap: 3px; /* Espacio entre filas */
     padding: 10px; /* Espaciado interno para la tabla */
-    margin-left: 50px;
     margin-top: -30px;
 }
 
@@ -468,35 +580,27 @@ body::before {
 }
 
 
+
 /* Estilo del tooltip */
-.celda::before {
-    content: attr(data-tooltip); /* Muestra el contenido del atributo data-tooltip */
+.tooltip {
     position: absolute;
-    top: 50%; /* Posiciona el tooltip en el centro vertical */
-    left: calc(100% + 5px); /* Posiciona el tooltip a la derecha de la celda */
-    transform: translateX(-50%);
-    backdrop-filter: blur(5px); /* Aplica un desenfoque al fondo */
+    backdrop-filter: blur(5px);
     background-color: #060235e5;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     color: #fff;
     text-align: left;
     padding: 5px 10px;
     border-radius: 0px;
     border: 1px solid rgb(102, 0, 0);
-    opacity: 0; /* El tooltip comienza oculto */
+    opacity: 0;
     transition: opacity 0.3s ease;
-    pointer-events: none; /* Evita que el tooltip sea clickable */
     z-index: 1;
-    max-width: 300px; /* Establecer un ancho máximo para el tooltip */
-    white-space: normal; /* Permitir que las palabras se ajusten sin dividirse */
-    word-wrap: normal; /* Evitar la división de palabras */
+    max-width: 300px;
+    white-space: normal;
+    word-wrap: normal;
+    pointer-events: none; /* Hace que el tooltip no sea interactivo */
 }
-
-/* Mostrar el tooltip al pasar el ratón */
-.celda:hover::before {
-    opacity: 1; /* Muestra el tooltip al pasar el ratón sobre la celda */
-} 
 
 /* Estilos generales del formulario */
 .proyecto-info form {

@@ -58,18 +58,45 @@
                 </div>
         </div>
         <div class="contenido-container">
+            <div class="banner">
+                <h3 class="titleSection" id="dynamicTitle" style="display: none;">Título de sección</h3>
+                <select id="select-way" style="display: none;">
+                    <option value="desafio1">Desafío 1</option>
+                    <option value="desafio2">Desafío 2</option>
+                    <option value="desafio3">Desafío 3</option>
+                    <option value="desafio4">Desafío 4</option>
+                </select>
+                <!-- Contenido del banner -->
+            </div>
             <!-- Agrega una clase por defecto al contenedor de contenido -->
             <!-- Contenido de proyectos -->
             <div class="proyecto-info" id="proyecto1-info">
                 <div class="proyecto1-info">
-                    <img src="Sources/caba1.jpg" alt="Proyecto 1">
-                    <h3>Proyecto 1</h3>
-                    <p>Descripción del Proyecto 1...</p>
-                    <ul>
-                        <li>Detalle 1</li>
-                        <li>Detalle 2</li>
-                        <!-- Otros detalles relevantes -->
-                    </ul>
+                    <div class="way">
+                        <ol class="wayList">                  
+                            <li class="elemento" id="desafio1">
+                                <time class="indice">Desafio 1</time>
+                                <h3 class="subtitulo">Application UI code in Tailwind CSS</h3>
+                                <img src="Sources/caba1.jpg" alt="Proyecto 1">
+                                <p class="descripcion">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                            </li>
+                            <li class="elemento" id="desafio2">
+                                <time class="indice">Desafio 2</time>
+                                <h3 class="subtitulo">Marketing UI design in Figma</h3>
+                                <p class="descripcion">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+                            </li>
+                            <li class="elemento" id="desafio3">
+                                <time class="indice">Desafio 3</time>
+                                <h3 class="subtitulo">E-Commerce UI code in Tailwind CSS</h3>
+                                <p class="descripcion">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                            </li>
+                            <li class="elemento" id="desafio4">
+                                <time class="indice">Desafio 4</time>
+                                <h3 class="subtitulo">E-Commerce UI code in Tailwind CSS</h3>
+                                <p class="descripcion">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                            </li>
+                        </ol>
+                    </div>   
                 </div>
                 <!-- Contenido adicional del Proyecto 1 -->
             </div>
@@ -112,8 +139,7 @@
                                 <p class="descripcion">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
                             </li>
                         </ol>
-                </div>
-                    
+                    </div>   
                 </div>
                 <!-- Contenido adicional de la Habilidad 2 -->
             </div>
@@ -340,9 +366,5 @@
     <!-- Mas contenido de la página aquí -->
 
     <script src="scripts.js"></script>
-    <script>
-        // Activa Tippy.js para los elementos con la clase tooltip-element
-        tippy('.tooltip-element');
-    </script>
 </body>
 </html>
