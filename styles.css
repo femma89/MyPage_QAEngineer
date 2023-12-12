@@ -352,6 +352,7 @@ body::before {
 #select-way {
     width: 120px;
     height: 30px;
+    padding: 0 0 0 2px;
     color:#fff;
     top: 0;
     background-color: #00000091; /* Ajusta el color de fondo según tu diseño */
@@ -652,6 +653,105 @@ body::before {
     background-color: #6d000077; 
     border: 2px solid rgb(102, 0, 0);
 }
+
+.proyecto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+.proyecto {
+    position: relative;
+    width: 300px;
+    border: 1px solid rgb(102, 0, 0);
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.proyecto:hover {
+    border: 1px solid #00e6f6;
+}
+
+.proyecto .tarjeta-project {
+    position: relative;
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 85% 100%, 0 100%);
+}
+
+.proyecto:hover img {
+    filter: brightness(0.5);
+}
+
+.tarjeta-project h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.tarjeta-project p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.imagen-botones {
+    position: relative;
+}
+
+.botones {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagen-botones:hover .botones {
+    opacity: 1;
+}
+
+.botones-projects {
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px; /* Espacio entre los botones */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.botones-projects:hover {
+    color: #00e6f6;
+}
+
+.comentario {
+    position: absolute;
+    top: 0; /* Ajuste para posicionar sobre el borde inferior de la imagen */
+    width: 90%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.imagen-botones:hover .comentario {
+    opacity: 1;
+}
+
+
 
 /* Estilos para cada tarjeta de opinión */
 .tarjeta-opinion {
