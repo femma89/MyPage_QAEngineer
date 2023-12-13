@@ -406,12 +406,31 @@ body::before {
     clip-path: polygon(0 0, 100% 0, 100% 70%, 70% 100%, 0 100%);
     border: 1px solid #00e6f6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega sombra */
-
 }
 
 .textoP {
+    margin-top: -50px;
     padding: 20px;
 }
+
+.stack-container {
+    display: flex;
+    align-items: center;
+}
+
+.stack-container img {
+    width: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    border: 0px solid #00e6f6;
+    margin-right: 2px;
+}
+
+.separator {
+    border-left: 1px solid #00e6f6; /* Cambia el color y el grosor como desees */
+    height: 15px; /* Ajusta la altura del separador igual al tamaño de las imágenes */
+    margin: 0 10px; /* Espaciado entre las imágenes y el separador */
+}
+
 
 /* Estilos para las secciones con animación */
 .animated-section {
@@ -774,11 +793,21 @@ body::before {
 }
 
 .info-persona {
-    padding: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.info-persona h3 {
+    color: #fff;
+}
+
+.info-persona h4 {
+    margin-top: -15px;
+    color: #888;
 }
 
 .info-persona p {
     margin: 0;
+    margin-top: -10px;
     margin-bottom: 10px;
     font-size: 16px;
 }
@@ -789,7 +818,6 @@ body::before {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
 
 button,
 button::after {
