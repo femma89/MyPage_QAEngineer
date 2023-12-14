@@ -702,12 +702,32 @@ body::before {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 85% 100%, 0 100%);
 }
 
+.proyecto video {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 85% 100%, 0 100%);
+}
+
 .proyecto:hover img {
     filter: brightness(0.5);
 }
 
+.proyecto:hover video {
+    filter: brightness(0.5);
+}
+
 .tarjeta-project h3{
+    color: #fff;
     margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.tarjeta-project h4{
+    color: #888;
+    margin-top: -10px;
     margin-bottom: 0;
     padding: 5px;
 }
@@ -769,8 +789,6 @@ body::before {
 .imagen-botones:hover .comentario {
     opacity: 1;
 }
-
-
 
 /* Estilos para cada tarjeta de opinión */
 .tarjeta-opinion {
