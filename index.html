@@ -70,7 +70,7 @@
                 <a href="Sources/CV EFLORES 2024.pdf" download="CV_Emmanuel_Flores">Descargar CV</a>
             </div>
                 <div class="footer">
-                    <p>Versión 0.9 (Early Access)</p>
+                    <p>Versión 1.0 (Release)</p>
                     <p>Diseño inspirado en el videojuego <span class="destacado">Cyberpunk 2077</span></p>
                 </div>
         </div>
@@ -78,10 +78,10 @@
             <div class="banner">
                 <h3 class="titleSection" id="dynamicTitle" style="display: none;">Título de sección</h3>
                 <select id="select-way" style="display: none;">
-                    <option value="desafio1">Desafío 1</option>
-                    <option value="desafio2">Desafío 2</option>
-                    <option value="desafio3">Desafío 3</option>
-                    <option value="desafio4">Desafío 4</option>
+                    <option value="desafio1">Creando personas al estilo Dios</option>
+                    <option value="desafio2">De la ficción a la realidad</option>
+                    <option value="desafio3">Buscando el agujero de seguridad</option>
+                    <option value="desafio4">¿Quién se robó los datos?</option>
                 </select>
                 <!-- Contenido del banner -->
             </div>
@@ -92,25 +92,49 @@
                     <div class="way">
                         <ol class="wayList">                  
                             <li class="elemento" id="desafio1">
-                                <time class="indice">Desafio 1</time>
-                                <h3 class="subtitulo">Application UI code in Tailwind CSS</h3>
-                                <img src="Sources/caba1.jpg" alt="Proyecto 1">
-                                <p class="descripcion">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                                <time class="indice">Trabajando como QA Manual</time>
+                                <h3 class="subtitulo">Creando personas al estilo Dios</h3>
+                                <img src="Sources/DEF1.png" alt="Proyecto 1">
+                                <p class="descripcion">Una de las primeras tareas que me tocaron por fuera de la normalidad de un analista QA manual fue comprobar un requerimiento que decía algo asi:</p>
+                                <p class="descripcion">El sistema debe soportar hasta 20000 empleados en su base de registros.</p>
+                                <p class="descripcion">La idea entonces fue encarar como realizar esta prueba, y como subir manualmente dicha cantidad de empleados no estaba en los planes, entonces había que ir por el lado de la automatización.</p>
+                                <p class="descripcion">Hasta ese momento con escasos conocimientos en programación utilice librerías RPA como pyAutoGUI en Python para controlar la computadora y lograr registrar 20001 empleados.</p>
+                                <p class="descripcion">La prueba fue exitosa y yo había encontrado nuevas herramientas para enfrentar la vida profesional.</p>
+                                <p class="descripcionFinal">Es importante enfrentarse a los desafíos, aunque estos parezcan que salen de las leyes del statu quo actual. Esto nos permite crecer.</p>
                             </li>
                             <li class="elemento" id="desafio2">
-                                <time class="indice">Desafio 2</time>
-                                <h3 class="subtitulo">Marketing UI design in Figma</h3>
-                                <p class="descripcion">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+                                <time class="indice">Trabajando como QA Manual</time>
+                                <h3 class="subtitulo">De la ficción a la realidad</h3>
+                                <img src="Sources/DEF2.png" alt="Proyecto 1">
+                                <p class="descripcion">Debido al buen recibimiento que tuvo mi gestión de pruebas de carga contando en “convocando gente” tuve el agrado de conocer gente del equipo de despliegue que considero que yo podia ayudarles a registrar a la base real de empleados actuales en el sistema que salía a preproducción.</p>
+                                <p class="descripcion">Como suele ocurre, despues de algunas reuniones nos dimos cuenta de que mi herramienta no era funcional para cargar empleados reales que tienen nombres, números de identidad y fotos diferentes.</p>
+                                <p class="descripcion">Pero la cosa no quedo alli. No pude dejar de pensar como lograr esa tarea. Y en ese momento con algo mas de entendimiento en el lenguaje Python desarrolle un programa de consola que podia leer un archivo Excel donde se encontraban todos los empleados con su nombre y numero de identidad y concatenar cada uno de ellos con un archivo de imagen guardado en un directorio.</p>
+                                <p class="descripcion">Luego de algunas pruebas… muchas… logre generar un archivo .csv que contenía los 5000 empleados cada uno con sus datos personales y su imagen de perfil.</p>
+                                <p class="descripcion">Por último, utilizando el robot RPA el equipo de despliegue pudo subir todos los empleados al sistema. Según ellos, se ahorraron dos meses de trabajo y llevaban dos meses de retraso.</p>
+                                <p class="descripcionFinal">Nunca deberíamos tener miedo de fracasar, sino de no intentarlo.</p>
                             </li>
                             <li class="elemento" id="desafio3">
-                                <time class="indice">Desafio 3</time>
-                                <h3 class="subtitulo">E-Commerce UI code in Tailwind CSS</h3>
-                                <p class="descripcion">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                                <time class="indice">Trabajando como Automation</time>
+                                <h3 class="subtitulo">Buscando el agujero de seguridad</h3>
+                                <img src="Sources/DEF3.png" alt="Proyecto 1">
+                                <p class="descripcion">Tiempo después me encontraba trabajando en una compañía que se dedicaba a la identificación biométrica de personas y recibieron un bug de producción.</p>
+                                <p class="descripcion">Dos personas con los mismos datos, pero con imágenes de perfil diferentes se habían podido registrar en la aplicación. Esto era grave porque la aplicación solo permitía la registración a través de la identificación biométrica del rostro con la cámara del celular.</p>
+                                <p class="descripcion">Se me pidió encontrar el agujero de seguridad. Es decir, lograr reproducir el bug en el ambiente de pruebas.</p>
+                                <p class="descripcion">La tarea se volvió desafiante cuando entendí que no lo estaba logrando con las pruebas básicas con la aplicación instalada en mi móvil. Entonces, mientras miraba girar el ventilador en el techo imaginé un sistema que convine una solución RPA con un script programático y algunos ladrillos de Rasti.</p>
+                                <p class="descripcion">Entonces ejecute en bucle la aplicación en un teléfono móvil que no utilizaba y me ayude con los bloques de Rasti a calibrarla frente a un monitor. En ese monitor se reproducían en bucle diferentes videos de rostros e imágenes fijas intentando ingresar al registro de la aplicación.</p>
+                                <p class="descripcion">La prueba duro algo mas de 30 horas seguidas sin parar, hasta que logre registrar dos rostros diferentes con los mismos datos reproduciendo el bug de producción y encontrando el agujero de seguridad a partir de los datos recopilados en las pruebas.</p>
+                                <p class="descripcion">Debo reconocer que fue una prueba exigente pero que me llevo a otro nivel con respecto a la calidad de mi trabajo y a entender mejor mis capacidades profesionales. En parte del equipo pase a llamarme el “Solucionador de problemas”</p>
+                                <p class="descripcionFinal">No existe un titulo o una etiqueta que te defina. Lo que te define son tus acciones delante de las tempestades.</p>
                             </li>
                             <li class="elemento" id="desafio4">
-                                <time class="indice">Desafio 4</time>
-                                <h3 class="subtitulo">E-Commerce UI code in Tailwind CSS</h3>
-                                <p class="descripcion">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                                <time class="indice">Trabajando como Automation</time>
+                                <h3 class="subtitulo">¿Quién se robó los datos?</h3>
+                                <img src="Sources/DEF4.png" alt="Proyecto 1">
+                                <p class="descripcion">Una de mis ultimas tareas exitosas en el área de Calidad de una compañía, que, en realidad, me abrió la puerta al Product Team como Technical Analyst fue de un trabajo detectivesco.</p>
+                                <p class="descripcion">Por algún motivo uno de los servicios de un sistema al finalizar un trabajo borraba la información de un archivo que era de suma importancia para el control posterior de esa tarea. Mi tarea como era de esperarse consistía en encontrar quien borraba los datos. ¿Era la propia tarea? ¿El sistema?, el servicio? ¿La librería? ¿El ambiente? Muchas incógnitas para un problema que debía ser solucionado antes de que ocurriese en producción.</p>
+                                <p class="descripcion">Resolví el problema enfocando las pruebas en los involucrados en la ejecución de la tarea. Construí diferentes prototipos utilizando diferentes librerías y ejecutando la misma tarea y verificando si los datos desaparecían o no. Al final encontré que la propia construcción del código generaba el borrado del archivo.</p>
+                                <p class="descripcion">Se me pidió cambiar la documentación funcional y aplicar la mejora. Me solicitaron desde el Product Team y comenzó una nueva aventura para mí.</p>
+                                <p class="descripcionFinal">Esto es una pequeña parte de como forje mi vida profesional. Lo que aquí no se cuenta es trabajo constante y diario. Desarrollo profesional y personal. Y lo mas importante, nunca dejar de intentarlo.</p>
                             </li>
                         </ol>
                     </div>   
